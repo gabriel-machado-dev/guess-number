@@ -106,3 +106,18 @@ def main():
 
 if __name__ == "__main__":
     main()
+    while True:
+        play_again = input(f"{YELLOW}Do you want to play again? (yes/no): {DEFAULT}")
+        if play_again.lower() == "yes":
+            main()
+        elif play_again.lower() == "no":
+            print('')
+            print(f"{YELLOW}Exiting the game...{DEFAULT}")
+            print(f'{YELLOW}Come back soon! 🚀{DEFAULT}')
+            sleep(2)
+            break
+        else:
+            print('')
+            print(f"{RED}Please, type a valid answer!{DEFAULT}")
+            print(f'{RED}Type "yes" to play again or "no" to exit the game.{DEFAULT}')
+            print('')
